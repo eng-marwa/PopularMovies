@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C5CAE9"
+        app:cardUseCompatPadding="true"
+        android:foreground="?attr/selectableItemBackground"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/first_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:textColor="@color/auther"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="5dp"
+                android:maxLines="3"
+                android:scrollHorizontally="false"
+                android:layout_gravity="top|left"/>
+
+
+            <TextView
+                android:id="@+id/first_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textColor="#000000"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="16sp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="5dp"
+                android:maxLines="3"
+                android:scrollHorizontally="false"
+                android:layout_gravity="top|left"/>
+            <View
+                android:id="@+id/horizontalLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/more_review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/more"
+                android:textColor="@color/colorPrimary"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

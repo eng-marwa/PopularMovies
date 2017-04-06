@@ -1,0 +1,96 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dip"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <include layout="@layout/details_card" />
+
+            <TextView
+                android:id="@+id/overview_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="@string/overview"
+                android:textAppearance="?attr/titleTextAppearance"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <include layout="@layout/overview_card" />
+
+            <TextView
+                android:id="@+id/trailers_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="@string/trailers"
+                android:textAppearance="?attr/titleTextAppearance"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C5CAE9"
+                android:foreground="?attr/selectableItemBackground"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:cardUseCompatPadding="true">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:clipToPadding="false"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="16dp"
+                    android:scrollbars="horizontal" />
+                <TextView
+                    android:id="@+id/tr_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:clipToPadding="false"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="16dp"
+                    android:textColor="@color/black"
+                    tools:text="@string/conn"
+                    android:visibility="gone"/>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/reviews_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="@string/reviews"
+                android:textAppearance="?attr/titleTextAppearance"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <include layout="@layout/reviews_card" />
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</FrameLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">PopularMovies</string>
+    <string name="title_activity_details">DetailsActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pop">Popularity</string>
+    <string name="top">Top Rated</string>
+    <string name="overview">Overview</string>
+    <string name="more">Read more</string>
+    <string name="title_activity_movie_overview">MovieOverviewActivity</string>
+    <string name="trailers">Trailers</string>
+    <string name="reviews">Reviews</string>
+    <string name="api_key">1962bc00de1584940b4f338dc55d6887</string>
+    <string name="title_activity_reviews">ReviewsActivity</string>
+    <string name="youtube_key">AIzaSyBttFDxeE5D0y6_ifKdOKg2G5wfV2ZaaHA</string>
+    <string name="fav">Wishlist</string>
+    <string name="conn">No Internet Connection</string>
+</resources>
