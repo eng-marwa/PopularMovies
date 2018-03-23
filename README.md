@@ -14,7 +14,7 @@ A simple Android app, that helps user to discover movies. This is Project 1 & Pr
 
 # Developer setup
 **Requirements**
-Java 8
+Java 7
 Latest version of Android SDK and Android Build Tools
 
 **API Key**
